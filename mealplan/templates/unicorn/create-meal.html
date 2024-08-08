@@ -1,0 +1,53 @@
+
+{% load unicorn %}
+<div>
+    <div unicorn:model.defer = "meals">
+        {% if not meals %}
+            <p>No meals yet</p>
+        {% else %}
+        {% for meal in meals %}
+            <p>{{ meal.name }}</p>
+        {% endfor %}
+        {% endif %}
+    </div>
+    <div>
+        {% if state == "Add" %}
+        <button unicorn:click.discard="add">Add a Meal</button>
+    </div>
+        {% else %}
+        <button unicorn:click.discard="cancel">Cancel</button>
+        <hr />
+    </div>
+    <div>
+        <label for="name">Name of meal</label>
+        <input unicorn:model.defer="name" type="text" id="name" />
+        <small style="color:red">&nbsp;{{ unicorn.errors.name.0.message }}</small>
+    </div>
+    <div>
+        <label for="main_dish">Main dish</label>
+        <input unicorn:model.defer="main_dish" type="text" id="main_dish" />
+        <small style="color:red">&nbsp;{{ unicorn.errors.main_dish.0.message }}</small>
+    </div>
+    <div>
+        <label for="side_dish">Side dish</label>
+        <input unicorn:model.defer="side_dish" type="text" id="side_dish" />
+    </div>
+    <div>
+        <label for="desert">Desert</label>
+        <input unicorn:model.defer="desert" type="text" id="desert" />
+    </div>
+    <div>
+        <label for="type_of_meal">Type of meal</label>
+        <select unicorn:model.defer="type_of_meal" id="id_type_of_meal">
+            <option value="" selected="">---------</option>
+            <option value="B">Breakfast</option>
+            <option value="L">Lunch</option>
+            <option value="D">Dinner</option>
+            <option value="S">Snack</option>
+        </select>
+    </div>
+    <p>
+        <button type=submit unicorn:click="create">Save</button>
+    </p>
+        {% endif %}
+</div>

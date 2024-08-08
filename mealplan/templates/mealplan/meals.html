@@ -1,0 +1,23 @@
+{% load unicorn %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Meal Plan</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    {% unicorn_scripts %}
+</head>
+
+<body>
+    <main class="container">
+        <header><h1>Meal Plan</h1></header>
+            {% unicorn "create-meal" %}
+            <hr />
+        <footer>
+            <p>2024 &copy;</p>
+            <p><a href="/admin">Admin</a></p>
+        </footer>
+        {% csrf_token %}
+    </main>
+</body>
+</html>
