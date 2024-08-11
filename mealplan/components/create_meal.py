@@ -27,6 +27,7 @@ class CreateMealView(UnicornView):
         self.state = "Cancel"
 
     def cancel(self):
+        self.reset()
         self.state = "Add"
 
     def create(self):
@@ -43,4 +44,3 @@ class CreateMealView(UnicornView):
 
         self.meals = Meal.objects.all()
         self.state = "Add"
-        self.reset()
