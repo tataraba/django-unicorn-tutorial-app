@@ -1,7 +1,7 @@
 from django_unicorn.components import UnicornView
 
-from ..forms import MealForm
-from ..models import Meal
+from mealplan.forms import MealForm
+from mealplan.models import Meal
 
 
 class CreateMealView(UnicornView):
@@ -19,6 +19,7 @@ class CreateMealView(UnicornView):
         self.meals = Meal.objects.all()
 
     def add(self):
+        self.reset()
         self.name = None
         self.main_dish = None
         self.side_dish = None
@@ -44,3 +45,7 @@ class CreateMealView(UnicornView):
 
         self.meals = Meal.objects.all()
         self.state = "Add"
+
+    def clear(self):
+        _remove_all_meals = Meal.objects.all().delete()
+        self.mount()

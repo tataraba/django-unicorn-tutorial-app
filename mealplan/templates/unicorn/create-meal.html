@@ -12,7 +12,10 @@
     </div>
     <div>
         {% if state == "Add" %}
-        <button unicorn:click.discard="add">Add a Meal</button>
+        <button unicorn:click="add">Add a Meal</button>
+        {% if meals %}
+        <button unicorn:click="clear">Clear Meals</button>
+        {% endif %}
     </div>
         {% else %}
         <button unicorn:click.discard="cancel">Cancel</button>
