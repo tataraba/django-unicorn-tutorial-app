@@ -9,7 +9,7 @@
 
 ---
 
-<p align="center"> This application will serves as a companion to a <a href="https://pythonbynight.com/blog/django-unicorn-tutorial">Django Unicorn tutorial</a> at <a href="https://pythonbynight.com">Python By Night</a>.
+<p align="center"> This application serves as a companion to a <a href="https://pythonbynight.com/blog/django-unicorn-tutorial">Django Unicorn tutorial</a> at <a href="https://pythonbynight.com">Python By Night</a>.
     <br> 
 </p>
 
