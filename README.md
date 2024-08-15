@@ -9,7 +9,7 @@
 
 ---
 
-<p align="center"> This application serves as a companion to a <a href="https://pythonbynight.com/blog/django-unicorn-tutorial">Django Unicorn tutorial</a> at <a href="https://pythonbynight.com">Python By Night</a>.
+<p align="center"> This application serves as a companion to a <a href="https://pythonbynight.com/blog/django-unicorn-tutorial">Django Unicorn tutorial</a> at <a href="https://pythonbynight.com">Python By Night</a>. More information on <a href="https://www.django-unicorn.com">Django Unicorn</a> can be found in the <a href="https://www.django-unicorn.com/docs/">official documentation</a>.
     <br> 
 </p>
 
@@ -27,11 +27,11 @@
 
 ## 🧐 About <a name = "about"></a>
 
-The Meal Plan app is meant to introduce the usage of Django Unicorn from start to finish. It will be accompanied by a tutorial that walks through setting up a Django application and incorporating Django Unicorn.
+The Meal Plan app is meant to introduce the usage of Django Unicorn from start to finish. It is accompanied by a [tutorial](href="https://pythonbynight.com/blog/django-unicorn-tutorial) that walks through setting up a Django application and incorporating Django Unicorn.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-More information will be in the forthcoming tutorial. For the time being, you should be able to follow these instructions to get a copy of the project up and running on your local machine.
+More information can be found in the tutorial. However, you should be able to follow these instructions to get a copy of the project up and running on your local machine.
 
 ### Prerequisites
 
